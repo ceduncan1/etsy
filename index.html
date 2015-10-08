@@ -1,15 +1,192 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>SAMPLE PROJECT</title>
+  <title>space cat - Etsy</title>
+  <!-- <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" /> -->
+  <!-- <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" /> -->
   <link rel="stylesheet" href="bower_components/normalize.css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
+<div class="body">
 
-  <h1>Hello World</h1>
+  <div class="container">
+
+    <header>
+      <section class="head1">
+        header 1
+      </section>
+      <hr>
+      <nav class="head2">
+        <span><a href="#">Clothing & Accessories</a></span>
+        <span><a href="#">Jewelry</a></span>
+        <span><a href="#">Craft Supplies & Tools</a></span>
+        <span><a href="#">Weddings</a></span>
+        <span><a href="#">Entertainment</a></span>
+        <span><a href="#">Home & Living</a></span>
+        <span><a href="#">Kids & Baby</a></span>
+        <span><a href="#">Vintages</a></span>
+      </nav>
+      <hr>
+    </header>
+
+    <div class="bottomHalf">
+      <body>
+        <hr>
+        <aside class="bodyL">
+          <section class="top">
+            <div class="asideTitle">Show results for:</div>
+            <ul>All Categories
+              <li><a href="#">Jewelry</a></li>
+              <li><a href="#">Art & Collectibles</a></li>
+              <li><a href="#">Craft Supplies & Tools</a></li>
+              <li><a href="#">Clothing</a></li>
+              <li><a href="#">Bags & Purses</a></li>
+              <li><a href="#">Electronics & Accesories</a></li>
+              <li><a href="#">Accessories</a></li>
+              <li><a href="#">Home & Living</a></li>
+              <li><a href="#">Pet Supplies</a></li>
+              <li><a href="#">Paper & Party Supplies</a></li>
+              <li><a href="#">Books, Movies & Music</a></li>
+              <li><a href="#">Bath & Beauty</a></li>
+              <li><a href="#">Toys & Games</a></li>
+              <li><a href="#">Shoes</a></li>
+              <li><a href="#">Weddings</a></li>
+            </ul>
+          </section>
+          <section class="bottom">
+            <div>Refine your search</div>
+            <div class="narrowSearch">
+              <div>Type</div>
+              <hr>
+              <div>Price</div>
+              <hr>
+              <div>Color</div>
+              <hr>
+              <div>Ordering</div>
+              <hr>
+              <div>Location</div>
+              <hr>
+              <div>Ship</div>
+            </div>
+          </section>
+        </aside>
+        <section class="bodyR">
+          <script type="text/template" id="itemTemplate">
+            <div class="itemBox">
+              <img src=<%=Images[0].url_75x75%>>
+              <div class="itemInfo">  
+                <div class="itemTitle"><%= title %></div> 
+                <span class="itemShop"><%= Shop.shop_name %></span>
+                <span class="itemPrice">$<%= price %> <%= currency_code %></span>
+              </p>
+            </div>
+            <hr>
+          </script>
+        </section>
+      </body>
+    </div>
+    <hr>
+  </div>
+
+
 
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/underscore/underscore.js"></script>
+  <script src="js/etsy.js"></script>  
   <script src="js/main.js"></script>
-</body>
+</div>
 </html>
+
+<!-- <div class="practice">
+  <script type="text/template" id="itemTemplate"></script>
+    <div class="itemBox">
+      <img src=<%=Images[0].url_75x75%>>
+      <div class="itemInfo">
+        <div class="itemTitle"><%= title %></div>
+        <span class="itemShop"><%= shop %></span>
+        <span class="itemPrice">$<%= price %><%= currencyCode %></span>
+      </div>
+
+    </div>
+  </script> -->
+
+<!--   <header>
+    <section class="head1">
+      <p>header 1</p>
+    </section>
+    <hr>
+    <nav class="head2">
+      <span><a href="#">Clothing & Accessories</a></span>
+      <span><a href="#">Jewelry</a></span>
+      <span><a href="#">Craft Supplies & Tools</a></span>
+      <span><a href="#">Weddings</a></span>
+      <span><a href="#">Entertainment</a></span>
+      <span><a href="#">Home & Living</a></span>
+      <span><a href="#">Kids & Baby</a></span>
+      <span><a href="#">Vintages</a></span>
+    </nav> -->
+<!--     <hr>
+  </header>
+
+
+  <div class="bottomHalf">
+    <body>
+      <hr>
+      <aside class="bodyL">
+        <section class="top">
+          <div class="asideTitle">Show results for:</div>
+          <ul>All Categories
+            <li><a href="#">Jewelry</a></li>
+            <li><a href="#">Art & Collectibles</a></li>
+            <li><a href="#">Craft Supplies & Tools</a></li>
+            <li><a href="#">Clothing</a></li>
+            <li><a href="#">Bags & Purses</a></li>
+            <li><a href="#">Electronics & Accesories</a></li>
+            <li><a href="#">Accessories</a></li>
+            <li><a href="#">Home & Living</a></li>
+            <li><a href="#">Pet Supplies</a></li>
+            <li><a href="#">Paper & Party Supplies</a></li>
+            <li><a href="#">Books, Movies & Music</a></li>
+            <li><a href="#">Bath & Beauty</a></li>
+            <li><a href="#">Toys & Games</a></li>
+            <li><a href="#">Shoes</a></li>
+            <li><a href="#">Weddings</a></li>
+          </ul>
+        </section>
+        <section class="bottom">
+          <div>Refine your search</div>
+          <div class="narrowSearch">
+            <div>Type</div>
+            <hr>
+            <div>Price</div>
+            <hr>
+            <div>Color</div>
+            <hr>
+            <div>Ordering</div>
+            <hr>
+            <div>Location</div>
+            <hr>
+            <div>Ship</div>
+          </div>
+        </section>
+      </aside>
+      <section class="bodyR">
+        
+      </section>
+    </body>
+  </div>
+  <hr>
+
+
+
+</div> -->
+
+
+
+
+
+
+
+
+
+

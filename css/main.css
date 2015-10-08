@@ -1,0 +1,14 @@
+.body {
+  margin: 20px 80px;
+  background-color: #F5F5F1; }
+  .body header {
+    width: 100%;
+    background-color: #FFFFFF; }
+  .body .bottomHalf {
+    width: 100%; }
+    .body .bottomHalf body .bodyL {
+      width: 25%;
+      float: left; }
+    .body .bottomHalf body .bodyR {
+      width: 75%;
+      float: left; }
