@@ -1,18 +1,41 @@
 .body {
-  margin: 20px 80px;
-  background-color: #F5F5F1;
+  // margin: 20px 80px;
+  a {
+    text-decoration: none;
+  }
 
   header {
-    width: 100%;
+    // width: 100%;
     background-color: #FFFFFF;
+    margin: 20px 80px;
+    hr {
+      // margin: -80px;
+    }
 
-    .head1 {}
+    .head1 {
+      // border-bottom: 1px solid red;
+    }
     .head2 {
-      span {}
+      // text-align: center;
+      // border-bottom: 1px solid red;
+      font-size: 14px;
+      color: #696969;
+      padding: 5px 0;
+
+      span {
+        a {
+          padding-right: 20px;
+          color: #707070;
+          // color: #0093B8;
+        }
+      }
     }
   }
   .bottomHalf {
     width: 100%;
+    background-color: #F5F5F1;
+    padding: 20px 80px;
+
     body {
       hr {}
       .bodyL{
@@ -20,6 +43,14 @@
         float: left;
         .top{
           .asideTitle {}
+          ul {
+            li {
+              a {
+                color: #0093B8;
+              }
+              
+            }
+          }
         }
         .bottom {
           div {}
@@ -34,9 +65,17 @@
         float: left;
         #itemTemplate {
           .itemBox {
-            img {}
+            img {
+              height: 30px;
+              width: 30px;
+            }
             .itemInfo {
-              .itemTitle {}
+              width: 100px;
+
+
+              .itemTitle {
+                overflow: hidden;
+              }
               .itemShop {}
               .itemPrice {}
             }

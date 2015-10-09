@@ -1,14 +1,33 @@
-.body {
-  margin: 20px 80px;
-  background-color: #F5F5F1; }
-  .body header {
-    width: 100%;
-    background-color: #FFFFFF; }
-  .body .bottomHalf {
-    width: 100%; }
-    .body .bottomHalf body .bodyL {
-      width: 25%;
-      float: left; }
-    .body .bottomHalf body .bodyR {
-      width: 75%;
-      float: left; }
+.body a {
+  text-decoration: none; }
+
+.body header {
+  background-color: #FFFFFF;
+  margin: 20px 80px; }
+  .body header .head2 {
+    font-size: 14px;
+    color: #696969;
+    padding: 5px 0; }
+    .body header .head2 span a {
+      padding-right: 20px;
+      color: #707070; }
+
+.body .bottomHalf {
+  width: 100%;
+  background-color: #F5F5F1;
+  padding: 20px 80px; }
+  .body .bottomHalf body .bodyL {
+    width: 25%;
+    float: left; }
+    .body .bottomHalf body .bodyL .top ul li a {
+      color: #0093B8; }
+  .body .bottomHalf body .bodyR {
+    width: 75%;
+    float: left; }
+    .body .bottomHalf body .bodyR #itemTemplate .itemBox img {
+      height: 30px;
+      width: 30px; }
+    .body .bottomHalf body .bodyR #itemTemplate .itemBox .itemInfo {
+      width: 100px; }
+      .body .bottomHalf body .bodyR #itemTemplate .itemBox .itemInfo .itemTitle {
+        overflow: hidden; }
