@@ -14,7 +14,7 @@ _.each(items,  function(item, index) {
   if (index <= 23) {
     // console.log(index);
     var itemHTML = templateFunction(item);
-    $('.bodyR').append(itemHTML);
+    $('.items').append(itemHTML);
   }
 });
 
